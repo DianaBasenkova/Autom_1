@@ -1,8 +1,10 @@
 package ru.netology.service;
 
-import org.testng.annotations.Test;
+import org.junit.Test;
 
-import static org.testng.Assert.*;
+import static org.junit.Assert.*;
+
+
 
 public class CashbackHackServiceTest {
     CashbackHackService service = new CashbackHackService();
@@ -19,7 +21,7 @@ public class CashbackHackServiceTest {
     @Test
     public void testRemainAmountThousand(){
 
-        //тут ошибка
+        // ошибка
         int amount = 1000;
 
         int actual = service.remain(amount);
